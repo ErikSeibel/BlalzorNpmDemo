@@ -4,6 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>NpmInBlazor</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,7 +13,7 @@
     </ItemGroup>
 
     <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-        <Exec Command="yarn" WorkingDirectory="JavaScript"/>
+        <Exec Command="yarn" WorkingDirectory="JavaScript" EnvironmentVariables="FORCE_COLOR=0"/>
         <Exec Command="yarn build" WorkingDirectory="JavaScript"/>
     </Target>
 

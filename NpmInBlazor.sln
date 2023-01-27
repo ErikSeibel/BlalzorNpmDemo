@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpmInBlazor", "NpmInBlazor\NpmInBlazor.csproj", "{E99221AE-D7CE-41F7-BBFC-E74C03CE606D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpmInBlazor.Client", "NpmInBlazor.Client\NpmInBlazor.Client.csproj", "{E99221AE-D7CE-41F7-BBFC-E74C03CE606D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NpmInBlazor.Server", "NpmInBlazor.Server\NpmInBlazor.Server.csproj", "{21A3EDED-E149-48C2-830E-66663D9D579A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{E99221AE-D7CE-41F7-BBFC-E74C03CE606D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E99221AE-D7CE-41F7-BBFC-E74C03CE606D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E99221AE-D7CE-41F7-BBFC-E74C03CE606D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A3EDED-E149-48C2-830E-66663D9D579A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A3EDED-E149-48C2-830E-66663D9D579A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A3EDED-E149-48C2-830E-66663D9D579A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A3EDED-E149-48C2-830E-66663D9D579A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

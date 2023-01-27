@@ -1,4 +1,4 @@
-# BlalzorNpmDemo
+# BlazorNpmDemo
 
 Du schreibst deinen JavaScript oder TypeScript Code in den [JavaScript/src/](https://github.com/TheSwerik/BlalzorNpmDemo/tree/main/NpmInBlazor.Client/JavaScript/src) Ordner.
 

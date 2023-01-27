@@ -8,6 +8,6 @@ Diese kannst du in die [index.html](https://github.com/TheSwerik/BlalzorNpmDemo/
 
 # Reasoning
 
-* Ein eigener JavaScript ordner, damit die config files und node_modules etc nicht das Projekt zumüllen
-* Das `[PROJEKT]/wwwroot/js/index.bundle.js` ist im .gitignore, weil die eh bei jedem dotnet Befehl neu generiert wird und deshalb wird das (ye nachdem wie viele npm packages man nutzt) einfach eine unnötig große Date im git, die nach jeder Änderung neu gepusht werden muss.
+* Ein eigener JavaScript Ordner, damit die config files, node_modules, etc. nicht das Projekt zumüllen
+* Das `[PROJEKT]/wwwroot/js/index.bundle.js` ist im .gitignore, weil die eh bei jedem dotnet Befehl neu generiert wird und deshalb wird das (je nachdem wie viele npm packages man nutzt) einfach eine unnötig große Date im git, die nach jeder Änderung neu gepusht werden muss.
 * In production mode braucht man die index.bundle.js.map nicht, und aus code obscurity Gründen will man die wahrscheinlich auch nicht

@@ -4,6 +4,32 @@
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
+<div>
+    <canvas id="chart"></canvas>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+@code
+{
+    [Inject]
+    private IJSRuntime JsRuntime { get; set; } = null!;
+
+    // I use OnAfterRenderAsync because the canvas needs to be initialised when invoking the JS method
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var random = Random.Shared;
+            var data = new[] { random.Next(), random.Next(), random.Next(), random.Next(), random.Next(), random.Next() };
+            await JsRuntime.InvokeVoidAsync("showChart", data);
+        }
+    }
+
+    /*
+    protected override async Task OnInitializedAsync()
+    {
+        var random = Random.Shared;
+        var data = new[] { random.Next(), random.Next(), random.Next(), random.Next(), random.Next(), random.Next() };
+        await JsRuntime.InvokeVoidAsync("showChart",data);
+    }
+    */
+}

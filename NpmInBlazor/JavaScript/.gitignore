@@ -1,0 +1,11 @@
+﻿# yarn specific
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# general
+node_modules
